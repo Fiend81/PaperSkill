@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220">
+  <rect width="960" height="220" fill="#f5f8f0"/>
+  <g font-family="'Microsoft YaHei','Segoe UI',sans-serif" text-anchor="middle">
+    <rect x="20" y="34" width="200" height="150" rx="14" fill="#ffffff" stroke="#27446e" stroke-width="2"/>
+    <text x="120" y="66" font-size="18" font-weight="700" fill="#27446e">Theorem 1</text>
+    <text x="120" y="96" font-size="14" fill="#21324a">条件向量场</text>
+    <text x="120" y="118" font-size="14" fill="#21324a">按后验权重聚合</text>
+    <text x="120" y="140" font-size="14" fill="#21324a">→ 正确的边缘场</text>
+
+    <rect x="260" y="34" width="200" height="150" rx="14" fill="#ffffff" stroke="#228d5c" stroke-width="2"/>
+    <text x="360" y="66" font-size="18" font-weight="700" fill="#228d5c">Theorem 2</text>
+    <text x="360" y="96" font-size="14" fill="#21324a">L_CFM = L_FM + C</text>
+    <text x="360" y="118" font-size="14" fill="#21324a">C 与 θ 无关</text>
+    <text x="360" y="140" font-size="14" fill="#21324a">→ 期望梯度相同</text>
+
+    <rect x="500" y="34" width="200" height="150" rx="14" fill="#ffffff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="600" y="66" font-size="18" font-weight="700" fill="#7c3aed">Theorem 3</text>
+    <text x="600" y="96" font-size="14" fill="#21324a">选定仿射高斯流</text>
+    <text x="600" y="118" font-size="14" fill="#21324a">ψ_t = σ_t x + μ_t</text>
+    <text x="600" y="140" font-size="14" fill="#21324a">→ 闭式条件场 u_t</text>
+
+    <rect x="740" y="34" width="200" height="150" rx="14" fill="#ffffff" stroke="#f07e47" stroke-width="2"/>
+    <text x="840" y="66" font-size="18" font-weight="700" fill="#f07e47">可计算目标</text>
+    <text x="840" y="96" font-size="14" fill="#21324a">逐样本、逐时刻</text>
+    <text x="840" y="118" font-size="14" fill="#21324a">回归条件速度</text>
+    <text x="840" y="140" font-size="14" fill="#21324a">训练无需 ODE 仿真</text>
+
+    <g stroke="#68778f" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="220" y1="109" x2="258" y2="109"/>
+      <line x1="460" y1="109" x2="498" y2="109"/>
+      <line x1="700" y1="109" x2="738" y2="109"/>
+    </g>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#68778f"/>
+    </marker>
+  </defs>
+</svg>

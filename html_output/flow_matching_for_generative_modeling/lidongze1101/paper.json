@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "paperName": "flow_matching_for_generative_modeling",
+  "title": "Flow Matching for Generative Modeling",
+  "authors": [],
+  "year": null,
+  "venue": "",
+  "paperUrl": "https://arxiv.org/abs/2210.02747",
+  "participants": [
+    {
+      "name": "lidongze",
+      "github": "Fiend81",
+      "jianlunId": "sota783350"
+    }
+  ],
+  "topics": [],
+  "skillVersion": "1.4.0",
+  "status": "review",
+  "entry": "index.html",
+  "version": "lidongze1101",
+  "versionDate": "2026-11-01"
+}

@@ -1,0 +1,161 @@
+/* Paper-specific overrides. This is the ONLY stylesheet the generator edits.
+   Keep the semantic color roles from tokens.css stable (see contract.md §5):
+   --blue = guidance/current, --green = success/paper method, --red = failure/old,
+   --orange = emphasis, --purple = auxiliary. Only append metaphor scene colors
+   or tune scene backgrounds here. Do NOT rewrite tokens.css / components.css. */
+
+:root {
+  --paper-scene-bg: #f5f8f0;
+  --paper-scene-light: #b8c9a7;
+  --paper-scene-dark: #76906a;
+  --paper-accent-2: #f07e47;
+}
+
+/* Paper-specific readouts for the corrected mathematical widgets. */
+.fm-readout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  margin: 10px 0 4px;
+}
+.fm-readout > div {
+  padding: 7px 10px;
+  border: 1px solid #d7deea;
+  border-radius: 8px;
+  background: #f5f8f0;
+  color: #21324a;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.fm-readout .k {
+  margin-right: 6px;
+  color: #68778f;
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+.fm-formula {
+  margin: 6px 0;
+  padding: 8px 10px;
+  border-left: 3px solid #27446e;
+  background: #f5f8f0;
+  color: #21324a;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.fm-weights {
+  display: grid;
+  gap: 6px;
+  margin: 8px 0;
+}
+.fm-weight {
+  display: grid;
+  grid-template-columns: 34px 1fr 54px;
+  align-items: center;
+  gap: 8px;
+  color: #68778f;
+  font-size: 13px;
+}
+.fm-weight-bar {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e7ede1;
+}
+.fm-weight-bar > span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+}
+.fm-note {
+  margin: 8px 0 0;
+  color: #68778f;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.fm-note strong {
+  color: #21324a;
+}
+details summary {
+  cursor: pointer;
+  color: #27446e;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Arrow/legend + grouped metric chart + figure lightbox. */
+.fm-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0;
+  color: #68778f;
+  font-size: 12px;
+}
+.fm-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.fm-legend i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+.fm-groupchart {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  background: #fff;
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+}
+canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+.slide-main {
+  padding-bottom: 96px;
+}
+.fm-figure-btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+.fm-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.84);
+}
+.fm-lightbox img {
+  width: auto;
+  max-width: 94vw;
+  max-height: 88vh;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+}
+.fm-lightbox-close {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  z-index: 1001;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #21324a;
+  font-size: 20px;
+  cursor: pointer;
+}
